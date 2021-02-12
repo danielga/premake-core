@@ -604,6 +604,13 @@
 	}
 
 	api.register {
+		name = "enabledynamicloading",
+		scope = "config",
+		kind = "boolean",
+		default = false
+	}
+
+	api.register {
 		name = "csversion",
 		scope = "config",
 		kind = "string",

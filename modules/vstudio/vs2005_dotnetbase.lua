@@ -764,6 +764,10 @@
 		_p(2,'<EnableDefaultCompileItems>%s</EnableDefaultCompileItems>', iif(cfg.enableDefaultCompileItems, "true", "false"))
 	end
 
+	function dotnetbase.netcore.enableDynamicLoading(cfg)
+		_p(2,'<EnableDynamicLoading>%s</EnableDynamicLoading>', iif(cfg.enableDynamicLoading, "true", "false"))
+	end
+
 	function dotnetbase.netcore.useWpf(cfg)
 		if cfg.flags.WPF then
 			_p(2,'<UseWpf>true</UseWpf>')
